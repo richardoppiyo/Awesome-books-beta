@@ -1,0 +1,24 @@
+{
+  "name": "awesome-books-beta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardoppiyo/Awesome-books-beta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richardoppiyo/Awesome-books-beta/issues"
+  },
+  "homepage": "https://github.com/richardoppiyo/Awesome-books-beta#readme",
+  "dependencies": {
+    "luxon": "^2.3.0",
+    "parcel-bundler": "^1.12.5"
+  }
+}
