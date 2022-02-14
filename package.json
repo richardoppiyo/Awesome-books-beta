@@ -19,10 +19,10 @@
   "homepage": "https://github.com/richardoppiyo/Awesome-books-beta#readme",
   "dependencies": {
     "luxon": "^2.3.0",
-    "npx": "^10.2.2",
-    "parcel-bundler": "^1.12.5"
+    "npx": "^10.2.2"
   },
   "devDependencies": {
-    "hint": "^6.1.9"
+    "hint": "^6.1.9",
+    "parcel-bundler": "^1.12.5"
   }
 }
