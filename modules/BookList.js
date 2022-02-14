@@ -1,18 +1,16 @@
-import { nav1, Book } from '/modules/Book.js'
-import { DateTime } from '/node_modules/luxon/src/luxon.js';
+import { nav1, Book } from '../../modules/Book.js';
+import { DateTime } from '../../node_modules/luxon/src/luxon.js';
 
 export class BookList {
   constructor() {
     this.books = [];
     this.htmlResult = '';
     this.loaded = false;
-  if (typeof(window) !== 'undefined'){
-    window.addEventListener('load', () => {
+    if (typeof(window) !== 'undefined'){
+      window.addEventListener('load', () => {
       this.loaded = true;
       const btnAdd = document.querySelector('.btnAdd');
       const currentDate = DateTime.now();
-      
-      // const currentDate = new Date();
       document.querySelector('.time').innerHTML = currentDate.toLocaleString(DateTime.DATETIME_MED);
       btnAdd.addEventListener('click', (e) => {
         e.preventDefault();

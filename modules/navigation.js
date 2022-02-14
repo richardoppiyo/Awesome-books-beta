@@ -1,19 +1,18 @@
-
 export class Navigator {
-    constructor() {
-      this.links = [];
-      this.activeSection = '#list';
-    }
+  constructor() {
+    this.links = [];
+    this.activeSection = '#list';
+  }
   
-    navigate(x) {
-      const lastActiveSection = document.querySelector(this.activeSection);
-      lastActiveSection.classList.remove('active');
-      this.activeSection = x;
-      const section = document.querySelector(x);
-      section.classList.add('active');
-    }
+  navigate(x) {
+    const lastActiveSection = document.querySelector(this.activeSection);
+    lastActiveSection.classList.remove('active');
+    this.activeSection = x;
+    const section = document.querySelector(x);
+    section.classList.add('active');
+  }
   
-    initiate() {
+  initiate() {
     if (typeof(window) !== 'undefined'){
       window.addEventListener('popstate', () => {
         this.links = Array.from(document.querySelectorAll('nav a '));
@@ -24,7 +23,7 @@ export class Navigator {
         this.navigate(window.location.hash);
       });
     }
-    }
   }
+}
   
  
