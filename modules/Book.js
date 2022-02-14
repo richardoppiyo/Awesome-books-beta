@@ -5,6 +5,6 @@ export class Book {
     this.title = title;
     this.author = author;
   }
- };
+};
 
  export const nav1 = new Navigator();

@@ -6,23 +6,23 @@ export class BookList {
     this.books = [];
     this.htmlResult = '';
     this.loaded = false;
-    if (typeof(window) !== 'undefined'){
+    if ( typeof( window ) !== 'undefined'){
       window.addEventListener('load', () => {
-      this.loaded = true;
-      const btnAdd = document.querySelector('.btnAdd');
-      const currentDate = DateTime.now();
-      document.querySelector('.time').innerHTML = currentDate.toLocaleString(DateTime.DATETIME_MED);
-      btnAdd.addEventListener('click', (e) => {
-        e.preventDefault();
-        const form = document.forms[0];
-        const title = form.title.value;
-        const author = form.author.value;
-        this.add(new Book(title, author));
-      });
-      this.updateList();
-    });
-  }
-  }
+        this.loaded = true;
+        const btnAdd = document.querySelector('.btnAdd');
+        const currentDate = DateTime.now();
+        document.querySelector('.time').innerHTML = currentDate.toLocaleString(DateTime.DATETIME_MED);
+        btnAdd.addEventListener('click', (e) => {
+          e.preventDefault();
+          const form = document.forms[0];
+          const title = form.title.value;
+          const author = form.author.value;
+          this.add(new Book(title, author));
+        });
+        this.updateList();
+       });
+      }
+    }
 
   updateList() {
     if (!this.loaded) return;
@@ -37,8 +37,8 @@ export class BookList {
       });
     });
     if (typeof window !== 'undefined') {
-     localStorage.setItem('books', JSON.stringify(this.books.map((x) => ({ ...x }))));
-   }
+      localStorage.setItem('books', JSON.stringify(this.books.map((x) => ({ ...x }))));
+    }
   }
 
   load() {

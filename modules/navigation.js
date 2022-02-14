@@ -1,4 +1,4 @@
-export class Navigator {
+export default class Navigator {
   constructor() {
     this.links = [];
     this.activeSection = '#list';
@@ -13,7 +13,7 @@ export class Navigator {
   }
   
   initiate() {
-    if (typeof(window) !== 'undefined'){
+    if ( typeof( window ) !== 'undefined') {
       window.addEventListener('popstate', () => {
         this.links = Array.from(document.querySelectorAll('nav a '));
         this.links.filter((el) => el.href !== window.location.href).forEach((el) => {
@@ -25,5 +25,3 @@ export class Navigator {
     }
   }
 }
-  
- 
