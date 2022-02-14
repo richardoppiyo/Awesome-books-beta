@@ -1,5 +1,7 @@
-import { nav1, Book } from '../../modules/Book.js';
-import { DateTime } from '../../node_modules/luxon/src/luxon.js';
+// eslint-disable-next-line import/no-cycle
+
+import { nav1, Book } from './Book.js';
+import { DateTime } from '../node_modules/luxon/src/luxon.js';
 
 export default class BookList {
   constructor() {
