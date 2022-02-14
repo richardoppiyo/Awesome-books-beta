@@ -3,7 +3,7 @@ export default class Navigator {
     this.links = [];
     this.activeSection = '#list';
   }
-  
+
   navigate(x) {
     const lastActiveSection = document.querySelector(this.activeSection);
     lastActiveSection.classList.remove('active');
@@ -11,9 +11,9 @@ export default class Navigator {
     const section = document.querySelector(x);
     section.classList.add('active');
   }
-  
+
   initiate() {
-    if ( typeof( window ) !== 'undefined') {
+    if (typeof (window) !== 'undefined') {
       window.addEventListener('popstate', () => {
         this.links = Array.from(document.querySelectorAll('nav a '));
         this.links.filter((el) => el.href !== window.location.href).forEach((el) => {

@@ -1,4 +1,4 @@
-import { Navigator } from '../../modules/navigation.js';
+import Navigator from '../../modules/navigation.js';
 
 export class Book {
   constructor(title, author) {
@@ -7,4 +7,4 @@ export class Book {
   }
 };
 
- export const nav1 = new Navigator();
+export const nav1 = new Navigator();

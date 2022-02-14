@@ -1,12 +1,12 @@
 import { nav1, Book } from '../../modules/Book.js';
 import { DateTime } from '../../node_modules/luxon/src/luxon.js';
 
-export class BookList {
+export default class BookList {
   constructor() {
     this.books = [];
     this.htmlResult = '';
     this.loaded = false;
-    if ( typeof( window ) !== 'undefined'){
+    if (typeof (window) !== 'undefined') {
       window.addEventListener('load', () => {
         this.loaded = true;
         const btnAdd = document.querySelector('.btnAdd');
@@ -20,9 +20,9 @@ export class BookList {
           this.add(new Book(title, author));
         });
         this.updateList();
-       });
-      }
+      });
     }
+  }
 
   updateList() {
     if (!this.loaded) return;
