@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "hint": "^6.1.9",
+    "madge": "^5.0.1",
     "parcel-bundler": "^1.12.5"
   }
 }
