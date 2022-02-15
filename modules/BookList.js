@@ -1,7 +1,5 @@
 // eslint-disable-next-line import/no-cycle
-
-import Book from './Book.js';
-import { nav1 } from './Book.js';
+import { Book,nav1 } from './Book.js';
 import { DateTime } from '../node_modules/luxon/build/es6/luxon.js';
 
 export default class BookList {
