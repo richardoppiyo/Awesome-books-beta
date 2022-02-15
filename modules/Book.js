@@ -2,7 +2,7 @@
 
 import Navigator from './navigation.js';
 
-export default class Book {
+export class Book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
