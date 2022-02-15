@@ -1,0 +1,32 @@
+{
+  "name": "awesome-books-beta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardoppiyo/Awesome-books-beta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richardoppiyo/Awesome-books-beta/issues"
+  },
+  "homepage": "https://github.com/richardoppiyo/Awesome-books-beta#readme",
+  "dependencies": {
+    "luxon": "^2.3.0",
+    "npx": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.4",
+    "hint": "^6.1.3",
+    "madge": "^5.0.1"
+  }
+}
